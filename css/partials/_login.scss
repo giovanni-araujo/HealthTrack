@@ -1,0 +1,83 @@
+.password_definition {
+  font-size: 16px;
+  color: #ffd800;
+  width: 100%;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+
+.login_container {
+  max-width: 70vw;
+  height: 550px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .login_input_area {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    padding-top: 5vw;
+
+    img {
+      animation: slide-right 0.5s ease;
+      position: relative;
+      width: 40vw;
+    }
+
+    .login_footer {
+      animation: slide-left 0.5s ease;
+      position: relative;
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      justify-content: flex-end;
+      margin-top: 2rem;
+      justify-content: space-between;
+
+      .password_link {
+        font-size: 14px;
+        color: #959698;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.4s ease-in;
+
+        &:hover {
+          color: #ffd800;
+          transition: 0.5s ease-in;
+        }
+
+      }
+    }
+
+    .login_buttons {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .login_container {
+    width: 100vw;
+
+    .login_input_area {
+      width: 94vw;
+
+      img {
+        width: 80vw;
+        margin-top: 6rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .login_footer {
+    flex-wrap: wrap-reverse;
+  }
+}

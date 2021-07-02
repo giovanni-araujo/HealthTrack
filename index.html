@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Track</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="js/svg-inject.min.js"></script>
+    
+  </head>
+  <body>
+    <!--======== HEADER ===========-->
+    <header>
+      <nav class="navbar">
+        <div class="nav-menu">
+          <div class="logo">
+            <!-- <a href=""
+              ><img
+                style="max-width: 96px"
+                src="svg/logo-spider.svg"
+                onload="SVGInject(this)"
+            /></a> -->
+            <!-- LOGO DE HALTER AQUI -->
+          </div>
+          <ul class="nav-list">
+            <li><a href="" class="nav-link">Usuário</a></li>
+            <li>
+              <a
+                href=""
+                class="nav-link"
+                style="color: #ffd800; font-style: italic"
+                >#DoYourBest</a
+              >
+            </li>
+           
+          </ul>
+        </div>
+        <div class="nav-social">
+          <img src="svg/icon-facebook.svg" onload="SVGInject(this)" />
+          <img src="svg/icon-instagram.svg" onload="SVGInject(this)" />
+          <img src="svg/icon-youtube.svg" onload="SVGInject(this)" />
+          <img
+            src="svg/icon-twitter.svg"
+            class="mr-2"
+            onload="SVGInject(this)"
+          />
+           <li><a href="./login.html" class="nav-link">Sair</a></li>
+        </div>
+        <div class="bx mr-1"></div>
+      </nav>
+    </header>
+
+    <!--======== BG-VIDEO ===========-->
+    <section class="bg-video">
+      <video class="video" preload="none" autoplay muted loop>
+        <source src="video/fit.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <!--======== CONTAINER ===========-->
+    <section class="container">
+      <div class="container-item-1">
+        <p class="px-1 item-1">
+          <img src="img/healthlogo.png" onload="SVGInject(this)" />
+        </p>
+        <p class="my-2 item-2">Bem vindo Usuário, o que deseja fazer hoje ?</p>
+        <p class="mt-1 flex item-3">
+         <div class="menu_dashboard">
+               
+          <span><a href="" class="btn">Exercícios</a></span>
+          <span
+            ><a href="" class="ml-2 btn-secondary" id="reverse"
+              >Estátisticas</a
+            ></span>
+             <span
+            ><a href="" class="ml-2 btn-secondary" id="reverse"
+              >Alimentação</a
+            ></span>
+           
+        
+         </div>
+       
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
